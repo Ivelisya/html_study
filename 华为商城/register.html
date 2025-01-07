@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华为账号注册</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/HUAWEI.svg" alt="华为" class="logo">
+    </header>
+
+    <main class="main-content">
+        <h1 class="title">华为账号注册</h1>
+
+        <div class="login-link">
+            已有账号，<a href="login.html" class="blue-link">去登录</a>
+        </div>
+
+        <div class="registration-options">
+            <button class="option-btn active">
+                <span class="icon">📱</span>
+                手机号注册
+            </button>
+            <button class="option-btn">
+                <span class="icon">✉️</span>
+                邮件地址注册
+            </button>
+        </div>
+
+        <form class="registration-form">
+            <div class="form-group">
+                <label for="country" class="form-label">国家/地区</label>
+                <select id="country" class="form-select">
+                    <option value="CN">中国</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div class="phone-input">
+                    <select class="country-code">
+                        <option value="86">+86(中国)</option>
+                    </select>
+                    <input type="tel" placeholder="手机号" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="verification-group">
+                    <input type="text" placeholder="短信验证码" class="form-input">
+                    <button type="button" class="get-code-btn">获取验证码</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="password-group">
+                    <input type="password" placeholder="密码" class="form-input">
+                    <button type="button" class="toggle-password">
+                        <span class="icon">👁️</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="password-group">
+                    <input type="password" placeholder="确认密码" class="form-input">
+                    <button type="button" class="toggle-password">
+                        <span class="icon">👁️</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">出生日期</label>
+                <div class="birthday-group">
+                    <select class="form-select">
+                        <option>2025年</option>
+                        <option>2024年</option>
+                        <option>2023年</option>
+                        <option>2022年</option>
+                        <option>2021年</option>
+                        <option>2020年</option>
+                        <option>2019年</option>
+                        <option>2018年</option>
+                        <option>2017年</option>
+                        <option>2016年</option>
+                        <option>2015年</option>
+                        <option>2014年</option>
+                        <option>2013年</option>
+                        <option>2012年</option>
+                        <option>2011年</option>
+                        <option>2010年</option>
+                        <option>2009年</option>
+                        <option>2008年</option>
+                        <option>2007年</option>
+                        <option>2006年</option>
+                        <option>2005年</option>
+                        <option>2004年</option>
+                        <option>2003年</option>
+                        <option>2002年</option>
+                        <option>2001年</option>
+                        <option>2000年</option>
+                        <option>1999年</option>
+                        <option>1998年</option>
+                        <option>1997年</option>
+                        <option>1996年</option>
+                        <option>1995年</option>
+                        <option>1994年</option>
+                        <option>1993年</option>
+                        <option>1992年</option>
+                        <option>1991年</option>
+                        <option>1990年</option>
+                    </select>
+                    <select class="form-select">
+                        <option>1月</option>
+                        <option>2月</option>
+                        <option>3月</option>
+                        <option>4月</option>
+                        <option>5月</option>
+                        <option>6月</option>
+                        <option>7月</option>
+                        <option>8月</option>
+                        <option>9月</option>
+                        <option>10月</option>
+                        <option>11月</option>
+                        <option>12月</option>
+                    </select>
+                    <select class="form-select">
+                        <option>1日</option>
+                        <option>2日</option>
+                        <option>3日</option>
+                        <option>4日</option>
+                        <option>5日</option>
+                        <option>6日</option>
+                        <option>7日</option>
+                        <option>8日</option>
+                        <option>9日</option>
+                        <option>10日</option>
+                        <option>11日</option>
+                        <option>12日</option>
+                        <option>13日</option>
+                        <option>14日</option>
+                        <option>15日</option>
+                        <option>16日</option>
+                        <option>17日</option>
+                        <option>18日</option>
+                        <option>19日</option>
+                        <option>20日</option>
+                        <option>21日</option>
+                        <option>22日</option>
+                        <option>23日</option>
+                        <option>24日</option>
+                        <option>25日</option>
+                        <option>26日</option>
+                        <option>27日</option>
+                        <option>28日</option>
+                        <option>29日</option>
+                        <option>30日</option>
+                        <option>31日</option>
+                    </select>
+                    <span class="info-icon">ℹ️</span>
+                </div>
+            </div>
+
+
+            <button type="submit" class="submit-btn">注册</button>
+            <script>
+                document.querySelector('.submit-btn').addEventListener('click', function (event) {
+                    event.preventDefault();
+                    window.location.href = 'login.html';
+                });
+            </script>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer-links">
+            <a href="#">华为账号用户协议</a>
+            <a href="#">关于华为账号与隐私的声明</a>
+            <a href="#">常见问题</a>
+            <a href="#">Cookies</a>
+        </nav>
+        <p class="copyright">华为账号 版权所有 © 2011-2025</p>
+    </footer>
+</body>
+
+</html>

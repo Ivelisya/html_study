@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华为账号登录</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <header class="header">
+            <img src="images/HUAWEI.svg" alt="Huawei Logo" width="120" height="40" class="logo">
+        </header>
+
+        <main class="main-content">
+            <h1 class="title">华为账号登录</h1>
+
+            <div class="login-section">
+                <div class="qr-section">
+                    <img src="images/qr.png" QR Code" width="200" height="200" class="qr-code">
+                    <p class="qr-hint">若您使用华为手机，请前往"设置" > "华为账号"扫码登录。</p>
+                </div>
+
+                <div class="form-section">
+                    <div class="input-group">
+                        <input type="text" placeholder="手机号/邮件地址/账号名" class="input-field">
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" placeholder="密码" class="input-field">
+                        <button class="visibility-toggle" aria-label="Toggle password visibility">
+                            <img src="images/ic_password_eyeoff.svg" alt="Toggle visibility" width="20" height="20">
+                        </button>
+                    </div>
+
+                    <a href="#" class="sms-login">短信验证码登录</a>
+
+                    <button class="login-button" onclick="window.location.href='index.html'">登录</button>
+
+                    <div class="links-group">
+                        <a href="register.html">注册</a>
+                        <a href="register.html">忘记密码</a>
+                        <a href="register.html">遇到问题</a>
+                    </div>
+
+                    <div class="social-login">
+                        <button class="social-icon" aria-label="Login option 1">
+                            <img src="images/ic_third_alipay.svg" alt="Social Icon 1" width="42" height="42">
+                        </button>
+                        <button class="social-icon" aria-label="Login option 2">
+                            <img src="images/ic_third_qq_hover.svg" alt="Social Icon 2" width="42" height="42">
+                        </button>
+                        <button class="social-icon" aria-label="Login option 3">
+                            <img src="images/ic_third_weixin.svg" alt="Social Icon 3" width="42" height="42">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="#">华为账号用户协议</a>
+                <a href="#">关于华为账号与隐私的声明</a>
+                <a href="#">常见问题</a>
+                <a href="#">Cookies</a>
+            </div>
+            <p class="copyright">华为账号 版权所有 © 2011-2025</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <form method="post" action="./login.html">
+        <div class="regist">
+            <div class="regist_center">
+                <div class="regist_top">
+                    <div class="left fl">会员注册</div>
+                    <div class="right fr"><a href="./index.html" target="_self">小米商城</a></div>
+                    <div class="clear"></div>
+                    <div class="xian"></div>
+                </div>
+
+                <div class="regist_main center">
+                    <div class="username">用&nbsp;&nbsp;户&nbsp;&nbsp;名:<input class="username_input" type="text"
+                            name="username" placeholder="请输入您的用户名">
+                        <span>请不要输入汉字</span>
+                    </div>
+                    <div class="password">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:<input
+                            class="password_input" type="password" name="password" placeholder="请输入您的密码">
+                        <span>请输入6位以上的字符</span>
+                    </div>
+                    <div class="confirm_psd">确认密码:<input class="password_input" type="password" name="confirm_password"
+                            placeholder="请输入您的密码">
+                        <span>两次输入的密码保持一致</span>
+                    </div>
+                    <div class="captcha">
+
+                        <div class="left fl">验&nbsp;&nbsp;证&nbsp;&nbsp;码:<input class="captcha_input" type="text"
+                                name="captcha" placeholder="请输入验证码">
+                            <span>不区分大小写</span>
+                        </div>
+                        <div class="right fl">
+                            <img src="./image/yanzhengma.jpg" alt="captcha">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div class="regist_submit">
+                    <input class="submit" type="submit" name="submit" value="立即注册">
+                </div>
+            </div>
+    </form>
+</body>
+
+</html>
