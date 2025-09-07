@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="./jquery-3.7.1.min.js"></script>
+        <script>
+            function clickme() {
+                alert("OK");
+                //jquery 获取id是whmc的按钮，并且把内容改成“传媒技术学院欢迎你！”
+                $("#whmc").html("传媒技术学院欢迎你！");
+                $("#whmc").css("color", "red");
+                $("#whmc").css("font-size", "30px");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="whmc">武汉传媒学院欢迎你！</div>
+        <button onclick="clickme()">点我!</button>
+    </body>
+</html>
